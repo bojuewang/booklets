@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870" height="265" viewBox="0 0 870 265" role="img" aria-labelledby="title desc">
+<title id="title">实心正方形、四面体表面与实心四面体</title>
+<desc id="desc">左图是两个三角形拼成的平面方形。中图的四面体有四个三角面，橙色空心标记表示内部点不属于表面。右图的橙色实心标记表示同一内部点属于实心四面体。</desc>
+<style>text{font-family:system-ui,'Microsoft YaHei',sans-serif;text-anchor:middle;fill:#18364d}.head{font-size:21px;font-weight:600}.note{font-size:16px}.edge{stroke:#2c5c76;stroke-width:2;stroke-linejoin:round}</style>
+<rect width="870" height="265" fill="#fff"/>
+<g>
+<text class="head" x="145" y="36">实心正方形</text>
+<path d="M90 64H200L90 174Z" fill="#d9ecf5"/>
+<path d="M200 64V174H90Z" fill="#a9d0e3"/>
+<path class="edge" fill="none" d="M90 64H200V174H90ZM200 64L90 174"/>
+<text class="note" x="145" y="222">两个三角形 · 二维区域</text>
+</g>
+<g transform="translate(290)">
+<text class="head" x="145" y="36">四面体表面</text>
+<path d="M145 59L70 158L215 160Z" fill="#eef6fa"/>
+<path d="M145 59L147 188L70 158Z" fill="#cce4f0" opacity=".8"/>
+<path d="M145 59L215 160L147 188Z" fill="#b4d5e8" opacity=".75"/>
+<path class="edge" fill="none" d="M145 59L70 158L147 188L215 160ZM145 59L147 188"/>
+<path class="edge" fill="none" stroke-dasharray="5 4" opacity=".7" d="M70 158L215 160"/>
+<circle cx="144.25" cy="141.25" r="7" fill="#fff" stroke="#ad4a19" stroke-width="3"/>
+<text class="note" x="145" y="222">四个三角面 · 内部点不在其中</text>
+</g>
+<g transform="translate(580)">
+<text class="head" x="145" y="36">实心四面体</text>
+<path class="edge" d="M145 59L147 188L70 158Z" fill="#a4cddd"/>
+<path class="edge" d="M145 59L215 160L147 188Z" fill="#659db8"/>
+<circle cx="144.25" cy="141.25" r="7" fill="#ad4a19" stroke="#fff" stroke-width="2"/>
+<text class="note" x="145" y="222">四个三角面＋三维内部</text>
+</g>
+<text class="note" x="435" y="250">橙色标记表示同一个三维内部点在图上的投影</text>
+</svg>

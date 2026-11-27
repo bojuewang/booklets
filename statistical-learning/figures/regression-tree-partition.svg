@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+<title id="title">回归树的轴对齐切分</title>
+<desc id="desc">先沿面积 80 平方米切分整个区域，再沿房龄 15 年只切分右侧区域，形成三个叶区域。</desc>
+<style>text{font-family:system-ui,'Microsoft YaHei',sans-serif;fill:#20384b;font-size:16px}.leaf{font-size:20px;font-weight:600}.split{stroke:#214d68;stroke-width:2.5;fill:none}.axis{stroke:#496173;stroke-width:1.5;fill:none}</style>
+<rect width="720" height="360" fill="#fff"/>
+<rect x="100" y="48" width="224" height="240" fill="#e1eff5"/>
+<rect x="324" y="48" width="296" height="120" fill="#dcebe4"/>
+<rect x="324" y="168" width="296" height="120" fill="#f6e6d7"/>
+<path d="M100 48H620V288H100Z" fill="none" stroke="#aabac7"/>
+<path class="split" d="M324 48V288"/>
+<path class="split" stroke-dasharray="7 5" d="M324 168H620"/>
+<path class="axis" stroke-dasharray="2 5" opacity=".48" d="M100 168H324"/>
+<path class="axis" d="M100 38V288H635M92 168H100M324 288V296"/>
+<text x="324" y="24" text-anchor="middle">第一刀</text>
+<text x="631" y="174">第二刀</text>
+<text x="86" y="174" text-anchor="end">15</text>
+<text x="324" y="318" text-anchor="middle">80</text>
+<text x="364" y="344" text-anchor="middle">面积（平方米）</text>
+<text transform="translate(38 168) rotate(-90)" text-anchor="middle">房龄（年）</text>
+<g text-anchor="middle">
+<text class="leaf" x="212" y="144">叶 1</text><text x="212" y="193">面积 ≤ 80</text>
+<text class="leaf" x="472" y="101">叶 3</text><text x="472" y="129">面积 &gt; 80，房龄 &gt; 15</text>
+<text class="leaf" x="472" y="227">叶 2</text><text x="472" y="255">面积 &gt; 80，房龄 ≤ 15</text>
+</g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="266" viewBox="0 0 780 266" role="img" aria-labelledby="title desc">
+  <title id="title">正方形的 Vietoris–Rips 滤过关键帧</title>
+  <desc id="desc">从左到右，阈值小于 1 时有四个孤立点，阈值从 1 到根号 2 之前时有一个环，阈值达到根号 2 时环被填满。</desc>
+  <style>text{text-anchor:middle;fill:#173b54;font-family:system-ui,'Microsoft YaHei',sans-serif}.range{font-size:21px;font-weight:600}.count{font-size:15px}</style>
+  <g transform="translate(12 0)">
+    <rect x="0" y="8" width="244" height="248" rx="12" fill="#f4f7fa"/>
+    <text x="122" y="42" class="range">0 ≤ r &lt; 1</text>
+    
+    
+    
+    <g fill="#173b54"><circle cx="62" cy="84" r="5"/><circle cx="182" cy="84" r="5"/><circle cx="182" cy="204" r="5"/><circle cx="62" cy="204" r="5"/></g>
+    <text x="122" y="237" class="count">4 个连通分量 · 0 个环</text>
+  </g>
+  <g transform="translate(268 0)">
+    <rect x="0" y="8" width="244" height="248" rx="12" fill="#f4f7fa"/>
+    <text x="122" y="42" class="range">1 ≤ r &lt; √2</text>
+    
+    <path d="M62 84H182V204H62Z" fill="none" stroke="#276786" stroke-width="3"/>
+    
+    <g fill="#173b54"><circle cx="62" cy="84" r="5"/><circle cx="182" cy="84" r="5"/><circle cx="182" cy="204" r="5"/><circle cx="62" cy="204" r="5"/></g>
+    <text x="122" y="237" class="count">1 个连通分量 · 1 个环</text>
+  </g>
+  <g transform="translate(524 0)">
+    <rect x="0" y="8" width="244" height="248" rx="12" fill="#f4f7fa"/>
+    <text x="122" y="42" class="range">r ≥ √2</text>
+    <path d="M62 84H182V204H62Z" fill="#c9e5ef"/>
+    <path d="M62 84H182V204H62Z" fill="none" stroke="#276786" stroke-width="3"/>
+    <path d="M62 84L182 204M182 84L62 204" fill="none" stroke="#276786" stroke-width="2" stroke-dasharray="5 4"/>
+    <g fill="#173b54"><circle cx="62" cy="84" r="5"/><circle cx="182" cy="84" r="5"/><circle cx="182" cy="204" r="5"/><circle cx="62" cy="204" r="5"/></g>
+    <text x="122" y="237" class="count">1 个连通分量 · 0 个环</text>
+  </g>
+</svg>
