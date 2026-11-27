@@ -20,25 +20,25 @@
 | 从 $n$ 个对象中选 $k$ 个 | 有放回 | 无放回 |
 | :--- | :---: | :---: |
 | 计顺序 | $n^k$ | $n^{(k)}$ |
-| 不计顺序 | $\left(\!\binom{n}{k}\!\right)$ | $\binom{n}{k}$ |
+| 不计顺序 | $\binom{n+k-1}{k}$ | $\binom{n}{k}$ |
 
 ### 按类型选取
 
 设有 $t\ge 1$ 种类型，第 $i$ 种有 $n_i\ge 1$ 个对象。同类型的对象视为相同。有放回时每类可重复选取，无放回时每类最多选 $n_i$ 个。选 $k\ge 0$ 个时，记无放回的可行计数向量集合为
 
 $$
-\mathcal A_k=\{(a_1,\ldots,a_t)\in\mathbb Z_{\ge 0}^t : a_1+\cdots+a_t=k,\ a_i\le n_i\text{ 对所有 }i\}.
+\mathcal A_k=\lbrace(a_1,\ldots,a_t)\in\mathbb Z_{\ge 0}^t : a_1+\cdots+a_t=k,\ a_i\le n_i\text{ 对所有 }i\rbrace.
 $$
 
 | 按类型选 $k$ 个 | 有放回 | 无放回 |
 | :--- | :---: | :---: |
 | 计顺序 | $t^k$ | $\displaystyle\sum_{\mathbf a\in\mathcal A_k}\binom{k}{a_1,\ldots,a_t}$ |
-| 不计顺序 | $\left(\!\binom{t}{k}\!\right)$ | $\#\mathcal A_k=[z^k]\prod_{i=1}^t(1+z+\cdots+z^{n_i})$ |
+| 不计顺序 | $\binom{t+k-1}{k}$ | $\lvert\mathcal A_k\rvert=[z^k]\prod_{i=1}^t(1+z+\cdots+z^{n_i})$ |
 
 $[z^k]$ 表示取 $z^k$ 的系数。也可用容斥公式计算：
 
 $$
-\#\mathcal A_k=\sum_{J\subseteq\{1,\ldots,t\}}(-1)^{|J|}
+\lvert\mathcal A_k\rvert=\sum_{J\subseteq\lbrace 1,\ldots,t\rbrace}(-1)^{\lvert J\rvert}
 \binom{k+t-1-\sum_{j\in J}(n_j+1)}{t-1}.
 $$
 
